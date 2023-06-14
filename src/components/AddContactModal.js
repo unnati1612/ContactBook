@@ -13,6 +13,7 @@ const AddContactModal = ({contactData,setContactData,show,setShow,label,contactL
       phone:''
   }
 
+  //submit data from form to add a contact
   const handleSubmit = (values) => {
     let check = contactList?.filter((item) => item.phone === values.phone);
     let objData = {

@@ -82,10 +82,14 @@ const ContactList = () => {
   //       });
   
   // }
+
+  //opens pop up to add data of new contact
   const handleAdd = ()=>{
     setLabel("Add")
     setShow(true)     
   }
+
+  //delete an existing contact from list
   const handleDelete=(value)=>{
 
     Swal.fire({
@@ -116,6 +120,7 @@ const ContactList = () => {
     })
    
 }
+  //opens pop up to update data of existing contact
   
   const handleEdit=(item)=>{
     setLabel("Edit")

@@ -13,6 +13,7 @@ const EditContactModal = ({editVal,setEditVal,showEdit,setShowEdit,contactList,s
     id:editVal?.id?editVal?.id:""
   }    
 
+  // submit updated  data from form to update contact
   const handleEditSubmit=(values)=>{
     let result=[...contactList]
     let index=contactList.findIndex(item=>item.id===values.id);
